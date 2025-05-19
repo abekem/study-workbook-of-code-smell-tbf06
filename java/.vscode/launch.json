@@ -8,7 +8,7 @@
             "type": "java",
             "name": "Launch Java Program",
             "request": "launch",
-            "mainClass": "${workspaceFolder}/app/src/main/java/java/App.java",
+            "mainClass": "${workspaceFolder}/app/src/main/java/sample/App.java",
             "projectName": "sample"
         }
     ]

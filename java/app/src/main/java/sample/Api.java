@@ -1,4 +1,4 @@
-package java;
+package sample;
 
 public class Api {
     private ApiConfig conf;
