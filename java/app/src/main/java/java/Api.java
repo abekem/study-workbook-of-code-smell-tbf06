@@ -1,4 +1,4 @@
-package main.java.java;
+package java;
 
 public class Api {
     private ApiConfig conf;
