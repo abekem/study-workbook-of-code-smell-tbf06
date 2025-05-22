@@ -1,10 +1,10 @@
 package sample;
 
-// APIの設定を使用するAPIクラス
-public class Api {
+// DBの設定を使用するDBクラス
+public class Db {
     private ConfigManager conf;
 
-    public Api(ConfigManager conf) {
+    public Db(ConfigManager conf) {
         this.conf = conf;
     }
     
