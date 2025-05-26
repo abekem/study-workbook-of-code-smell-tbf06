@@ -2,9 +2,9 @@ package sample;
 
 // DBの設定を使用するDBクラス
 public class Db {
-    private ConfigManager conf;
+    private DbConfig conf;
 
-    public Db(ConfigManager conf) {
+    public Db(DbConfig conf) {
         this.conf = conf;
     }
     

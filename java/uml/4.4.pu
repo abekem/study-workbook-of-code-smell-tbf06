@@ -1,0 +1,24 @@
+@startuml 4.4
+
+class Api {
+    +getUserList()
+}
+
+class Db {
+    +getUserList()
+}
+
+class ApiConfig {
+    +getId()
+    +getPassword()
+}
+
+class DbConfig {
+    +getId()
+    +getPassword()
+}
+
+Api ..> ApiConfig
+Db ..> DbConfig
+
+@enduml
