@@ -1,0 +1,23 @@
+@startuml 5.3.1
+
+class UserRepository {
+    +findAll()
+}
+
+interface DataStoreInterface {
+    +getUserList()
+}
+
+class Api {
+    +getUserList()
+}
+
+class Db {
+    +getUserList()
+}
+
+UserRepository ..> DataStoreInterface
+DataStoreInterface <|-- Api
+DataStoreInterface <|-- Db
+
+@enduml
