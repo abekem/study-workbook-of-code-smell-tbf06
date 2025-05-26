@@ -1,0 +1,19 @@
+@startuml 4.1
+
+class Api {
+    +getUserList()
+}
+
+class Db {
+    +getUserList()
+}
+
+class ConfigManager {
+    +getId()
+    +getPassword()
+}
+
+Api ..> ConfigManager
+Db ..> ConfigManager
+
+@enduml
