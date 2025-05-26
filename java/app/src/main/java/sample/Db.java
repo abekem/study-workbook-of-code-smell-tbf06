@@ -7,11 +7,11 @@ public class Db {
     public Db(DbConfig conf) {
         this.conf = conf;
     }
-    
-    public String getUserList() {
+
+    public String selectAllUser() {
         String id = conf.getId();
         String password = conf.getPassword();
-        
+
         // APIを使用してユーザーリストを返すモック
         return "[{\"id\" => 1,\"name\" => \"user1\"}]";
     }

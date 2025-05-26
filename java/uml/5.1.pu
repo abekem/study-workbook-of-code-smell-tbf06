@@ -1,0 +1,18 @@
+@startuml 5.1 
+
+class UserRepository {
+    +findAll()
+}
+
+class Api {
+    +getUserList()
+}
+
+class Db {
+    +selectAllUser()
+}
+
+UserRepository ..> Api
+UserRepository ..> Db
+
+@enduml
