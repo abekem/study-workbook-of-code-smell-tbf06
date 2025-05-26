@@ -1,14 +1,14 @@
 package sample;
 
 // DBの設定を使用するDBクラス
-public class Db {
+public class Db implements DataStoreInterface {
     private DbConfig conf;
 
     public Db(DbConfig conf) {
         this.conf = conf;
     }
 
-    public String selectAllUser() {
+    public String getUserList() {
         String id = conf.getId();
         String password = conf.getPassword();
 

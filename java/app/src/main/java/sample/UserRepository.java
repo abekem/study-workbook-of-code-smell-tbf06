@@ -1,24 +1,13 @@
 package sample;
 
 public class UserRepository {
-    private final Api api;
-    private final Db db;
+    private final DataStoreInterface dataStore;
 
-    public UserRepository(Api api) {
-        this.api = api;
-        this.db = null;
-    }
-
-    public UserRepository(Db db) {
-        this.api = null;
-        this.db = db;
+    public UserRepository(DataStoreInterface dataStore) {
+        this.dataStore = dataStore;
     }
 
     public String findAll() {
-        if (api != null) {
-            return api.getUserList();
-        } else {
-            return db.selectAllUser();
-        }
+        return dataStore.getUserList();
     }
 }
