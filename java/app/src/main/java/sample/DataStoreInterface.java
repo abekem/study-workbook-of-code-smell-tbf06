@@ -1,5 +1,5 @@
 package sample;
 
-public interface DataStoreInterface {
+interface DataStoreInterface {
     String getUserList();
 }

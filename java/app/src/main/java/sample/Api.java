@@ -1,10 +1,10 @@
 package sample;
 
 // APIの設定を使用するAPIクラス
-public class Api {
-    private ConfigInterface conf;
+public class Api implements DataStoreInterface {
+    private ApiConfig conf;
 
-    public Api(ConfigInterface conf) {
+    public Api(ApiConfig conf) {
         this.conf = conf;
     }
 

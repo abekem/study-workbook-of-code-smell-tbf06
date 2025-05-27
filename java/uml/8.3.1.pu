@@ -1,0 +1,18 @@
+@startuml 8.3.1
+
+package 上位モジュール {
+    class UserRepository {
+        +findAll()
+    }
+}
+
+package 下位モジュール {
+    class Api {
+        +getUserList()
+    }
+}
+
+UserRepository ..> Api
+
+@enduml
+

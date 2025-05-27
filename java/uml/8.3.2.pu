@@ -1,0 +1,22 @@
+@startuml 8.3.1
+
+package 上位モジュール {
+    class UserRepository {
+        +findAll()
+    }
+    
+    interface DataStoreInterface {
+        +getUserList()
+    }
+}
+
+package 下位モジュール {
+    class Api {
+        +getUserList()
+    }
+}
+
+UserRepository .> DataStoreInterface
+DataStoreInterface <|.. Api
+
+@enduml
