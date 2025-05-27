@@ -1,0 +1,13 @@
+@startuml 8.1
+
+class UserRepository {
+    +findAll()
+}
+
+class Api {
+    +getUserList()
+}
+
+UserRepository ..> Api
+
+@enduml
