@@ -1,0 +1,35 @@
+@startuml 7.1
+
+class Api {
+    +getUserList()
+}
+
+class Db {
+    +getUserList()
+}
+
+interface ConfigInterface {
+    +getId()
+    +getUser()
+    +getPassword()
+}
+
+class ApiConfig {
+    +getId()
+    +getUser()
+    +getPassword()
+}
+
+class DbConfig {
+    +getId()
+    +getUser()
+    +getPassword()
+}
+
+Api ..> ConfigInterface
+Db ..> ConfigInterface
+ConfigInterface <|.. ApiConfig
+ConfigInterface <|.. DbConfig
+
+@enduml
+

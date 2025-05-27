@@ -5,7 +5,7 @@ import java.util.Map;
 import sample.utils.File;
 import sample.utils.JSON;
 
-public class ApiConfig {
+public class ApiConfig implements ConfigInterface {
     private static final String CONFIG_PATH = "/api_config.json";
 
     private Map<String, String> conf;
@@ -18,6 +18,10 @@ public class ApiConfig {
 
     public String getId() {
         return conf.get("id");
+    }
+
+    public String getUser() {
+        return null;
     }
 
     public String getPassword() {

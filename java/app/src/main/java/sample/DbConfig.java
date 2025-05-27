@@ -5,7 +5,7 @@ import java.util.Map;
 import sample.utils.File;
 import sample.utils.JSON;
 
-public class DbConfig {
+public class DbConfig implements ConfigInterface {
     private static final String CONFIG_PATH = "/db_config.json";
 
     private Map<String, String> conf;
@@ -17,7 +17,11 @@ public class DbConfig {
     }
 
     public String getId() {
-        return this.conf.get("id");
+        return null;
+    }
+
+    public String getUser() {
+        return this.conf.get("user");
     }
 
     public String getPassword() {
